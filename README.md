@@ -28,7 +28,7 @@ Desktop-приложение припрепленно в виде проекта
 2. Запустить DatabaseScript.sql скрипт для создания базы данных на локальном SQL-сервере
 3. Запустить LopushokApp.sln файл средствами Microsoft Visual Studio
 4. Собрать проект
-5. Запустить LopushokApp.exe файл, расположенный по пути *папка_установки*\PoprijonokApp\PoprijonokApp\bin\Debug\
+5. Запустить LopushokApp.exe файл, расположенный по пути *папка_установки*\PoprijonokApp\LopushokApp\bin\Debug\
 
 ## Автор
 Цыганок Василий
