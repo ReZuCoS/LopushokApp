@@ -1,0 +1,52 @@
+﻿<Window x:Class="LopushokApp.Views.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Главное меню"
+        Visibility="Visible"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Height="250" Width="350"
+        Icon="{StaticResource logoIcon}">
+
+    <Grid>
+        <!-- Window row definitions -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="{DynamicResource additionalColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75"/> <!-- Image column -->
+                <ColumnDefinition/> <!-- Database name column -->
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" 
+                   Source="{StaticResource logoImage}"
+                   Width="55" Height="55"/>
+
+            <TextBlock Grid.Column="1"
+                       Style="{StaticResource defaultTextBlock}"
+                       VerticalAlignment="Center"
+                       Text="Лопушок"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Background="{DynamicResource mainColor}">
+            
+            <!-- Buttons stack panel -->
+            <StackPanel Margin="10">
+                
+                <!-- Products table button -->
+                <Button Style="{StaticResource defaultButton}"
+                        Content="Таблица «Продукты»" Click="OpenProducts"/>
+                
+                <!-- Close app button -->
+                <Button Style="{StaticResource defaultButton}"
+                        Content="Завершить работу" Click="ApplicationExit"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

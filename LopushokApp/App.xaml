@@ -1,0 +1,28 @@
+﻿<Application x:Class="LopushokApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Windows/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!-- Application merged styles -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Buttons.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/TextBlocks.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/TextBoxes.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Labels.xaml"/>
+                <ResourceDictionary Source="Resources/Themeplates/ComboBoxes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Application images and icons -->
+            <BitmapImage x:Key="logoIcon" UriSource="/Resources/Лопушок.ico"/>
+            <BitmapImage x:Key="logoImage" UriSource="/Resources/Лопушок.png"/>
+
+            <!-- Application colors -->
+            <SolidColorBrush x:Key="mainColor" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="additionalColor" Color="#CEFFF9"/>
+            <SolidColorBrush x:Key="attentionColor" Color="#00CC76"/>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
